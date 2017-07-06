@@ -258,6 +258,7 @@ class EnhancedButton extends Component {
 
   focus() {
     this.refs.enhancedButton.focus();
+    this.setKeyboardFocus(null);
   }
 
   render() {
