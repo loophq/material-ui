@@ -153,6 +153,7 @@ class EnhancedTextarea extends Component {
       <div style={prepareStyles(rootStyles)}>
         <EventListener target="window" onResize={this.handleResize} />
         <textarea
+          aria-hidden="true"
           ref="shadow"
           style={prepareStyles(shadowStyles)}
           tabIndex="-1"
