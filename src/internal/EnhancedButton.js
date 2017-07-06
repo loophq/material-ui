@@ -256,6 +256,10 @@ class EnhancedButton extends Component {
     }
   };
 
+  focus() {
+    this.refs.enhancedButton.focus();
+  }
+
   render() {
     const {
       centerRipple, // eslint-disable-line no-unused-vars

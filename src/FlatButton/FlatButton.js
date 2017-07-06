@@ -146,6 +146,10 @@ class FlatButton extends Component {
     this.props.onTouchStart(event);
   };
 
+  focus = () => {
+    this.refs.enhanced.focus();
+  };
+
   render() {
     const {
       children,
@@ -269,6 +273,7 @@ class FlatButton extends Component {
         style={mergedRootStyles}
         touchRippleColor={buttonRippleColor}
         touchRippleOpacity={0.3}
+        ref="enhanced"
       >
         {enhancedButtonChildren}
       </EnhancedButton>
