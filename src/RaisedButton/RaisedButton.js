@@ -324,6 +324,10 @@ class RaisedButton extends Component {
     });
   };
 
+  focus = () => {
+    this.refs.container.focus();
+  };
+
   render() {
     const {
       backgroundColor, // eslint-disable-line no-unused-vars
